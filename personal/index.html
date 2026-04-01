@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismael Novelo 🌟</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"> Ismael Novelo <img src="bug.png" class="logo-png"></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Projects</a></li>
+        <li><a href="#fun-zone">Code</a></li>
+        <a href="../School/index1.html" class="folder-link"><label>School Website</label></a>
+        <a href="../bscs/index2.html" class="folder-link"><label>BSCS Website</label></a>
+        <a href="../company/index3.html" class="folder-link"><label>Company Website</label></a>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero section">
+      <div class="hero-content hidden">
+        <h1>Welcome to my Website! <img src="hacker.png" class="logo1-png"> </h1>
+        <p>Discover and grow with Me.</p>
+        <a href="#programs">
+        <button class="cta-btn">Join the Fun</button>
+        </a>
+      </div>
+    </header>
+
+    <section id="programs" class="programs section">
+        <h2 class="hidden">The Awesome Projects <img src="web.png" class="logo1-png"></h2>
+    <div class="cards-container">
+      <div class="card hidden card-delay-1">
+        <h3>Calculator 🧮</h3>
+        <!-- PREVIEW BOX -->
+    <iframe class="preview"></iframe>
+
+    <!-- HIDDEN CODE -->
+    <script type="text/plain" class="card-code">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 200px;
+            padding: 8px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="num1" placeholder="First number">
+        <input type="text" id="num2" placeholder="Second number">
+        <button onclick="add()">Add</button>
+        <input type="text" id="result" placeholder="Result" readonly>
+    </div>
+
+    <script
+>
+     function add() {
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            document.getElementById("result").value = n1 + n2;
+        }
+</script>
+</body>
+
+</html>
+
+    </script>
+    </div>
+
+      <div class="card hidden card-delay-2">
+        <h3>Peso to Dollar ⚖️</h3>
+        <div class="code-container">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre><code>
+    .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    </code></pre>
+    </div>
+    </div>
+
+    <section id="fun-zone" class="interactive-select section">
+      <h2 class="hidden">Pick Your Favorite Projects! 💻</h2>
+      <div class="select-container hidden">
+        <select id="subject-select">
+          <option value="Calculator">Calculator 🧮</option>
+          <option value="Peso to Dollar">Peso to Dollar ⚖️</option>
+          <option value="Hello World">Hello World 🌍</option>
+          <option value="Window">Window 🌍</option>
+          <option value="Name pop up window">Name pop up window 🌍</option>
+          <option value="Birthday">Birthday 🌍</option>
+          <option value="If else window">If else window 🌍</option>
+          <option value="Alcohol Verification">Alcohol Verification 🌍</option>
+          <option value="Show current date">Show current date 🌍</option>
+          <option value="Multiplication">Multiplication 🌍</option>
+          <option value="Division">Division 🌍</option>
+          <option value="Addition">Addition 🌍</option>
+          <option value="Subtraction">Subtraction 🌍</option>
+          <option value="Timer">Timer 🌍</option>
+          <option value="interframe image">interframe image 🌍</option>
+          <option value="Name Greeting">Name Greeting 🌍</option>
+        </select>
+        <div id="subject-result" class="result-box"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Ismael Novelo. Built with fun!</p>
+    </footer>
+    
+      
+    <script src="script.js"></script>
+  </body>
+</html>
